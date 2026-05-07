@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/obfuscate.py": {
+      "runtime": "python3.9",
+      "maxDuration": 30
+    }
+  }
+}
+
+curl -X POST https://obfvip.vercel.app//api/obfuscate -F "file=@test.py" -F "mode=2" -F "username=test" --output output.py
